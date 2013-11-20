@@ -20,9 +20,9 @@
 		0A0505D11833C2E0000DC4B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A0505B31833C2E0000DC4B7 /* UIKit.framework */; };
 		0A0505D91833C2E0000DC4B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A0505D71833C2E0000DC4B7 /* InfoPlist.strings */; };
 		0A0505DB1833C2E0000DC4B7 /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0505DA1833C2E0000DC4B7 /* ExampleTests.m */; };
-		0A0505E71833C57C000DC4B7 /* MCDebugBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0505E61833C57C000DC4B7 /* MCDebugBar.m */; };
+		0A0505E71833C57C000DC4B7 /* KRDebugBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0505E61833C57C000DC4B7 /* KRDebugBar.m */; };
 		0A0505E91833CBCC000DC4B7 /* placholder.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0A0505E81833CBCC000DC4B7 /* placholder.jpeg */; };
-		0AC82FEC183D107900770D85 /* MCDebugBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC82FEB183D107900770D85 /* MCDebugBarButton.m */; };
+		0AC82FEC183D107900770D85 /* KRDebugBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC82FEB183D107900770D85 /* KRDebugBarButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,11 +53,11 @@
 		0A0505D61833C2E0000DC4B7 /* ExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExampleTests-Info.plist"; sourceTree = "<group>"; };
 		0A0505D81833C2E0000DC4B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A0505DA1833C2E0000DC4B7 /* ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleTests.m; sourceTree = "<group>"; };
-		0A0505E51833C57C000DC4B7 /* MCDebugBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDebugBar.h; sourceTree = "<group>"; };
-		0A0505E61833C57C000DC4B7 /* MCDebugBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDebugBar.m; sourceTree = "<group>"; };
+		0A0505E51833C57C000DC4B7 /* KRDebugBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRDebugBar.h; sourceTree = "<group>"; };
+		0A0505E61833C57C000DC4B7 /* KRDebugBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRDebugBar.m; sourceTree = "<group>"; };
 		0A0505E81833CBCC000DC4B7 /* placholder.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placholder.jpeg; sourceTree = "<group>"; };
-		0AC82FEA183D107900770D85 /* MCDebugBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCDebugBarButton.h; sourceTree = "<group>"; };
-		0AC82FEB183D107900770D85 /* MCDebugBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCDebugBarButton.m; sourceTree = "<group>"; };
+		0AC82FEA183D107900770D85 /* KRDebugBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRDebugBarButton.h; sourceTree = "<group>"; };
+		0AC82FEB183D107900770D85 /* KRDebugBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRDebugBarButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,10 +160,10 @@
 		0A0505E41833C556000DC4B7 /* ios-debugbar */ = {
 			isa = PBXGroup;
 			children = (
-				0A0505E51833C57C000DC4B7 /* MCDebugBar.h */,
-				0A0505E61833C57C000DC4B7 /* MCDebugBar.m */,
-				0AC82FEA183D107900770D85 /* MCDebugBarButton.h */,
-				0AC82FEB183D107900770D85 /* MCDebugBarButton.m */,
+				0A0505E51833C57C000DC4B7 /* KRDebugBar.h */,
+				0A0505E61833C57C000DC4B7 /* KRDebugBar.m */,
+				0AC82FEA183D107900770D85 /* KRDebugBarButton.h */,
+				0AC82FEB183D107900770D85 /* KRDebugBarButton.m */,
 			);
 			name = "ios-debugbar";
 			path = "../ios-debugbar";
@@ -268,9 +268,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A0505C01833C2E0000DC4B7 /* AppDelegate.m in Sources */,
-				0AC82FEC183D107900770D85 /* MCDebugBarButton.m in Sources */,
+				0AC82FEC183D107900770D85 /* KRDebugBarButton.m in Sources */,
 				0A0505BC1833C2E0000DC4B7 /* main.m in Sources */,
-				0A0505E71833C57C000DC4B7 /* MCDebugBar.m in Sources */,
+				0A0505E71833C57C000DC4B7 /* KRDebugBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

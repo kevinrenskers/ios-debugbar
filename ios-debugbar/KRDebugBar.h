@@ -1,5 +1,5 @@
 //
-//  MCDebugBar.h
+//  KRDebugBar.h
 //  Example
 //
 //  Created by Kevin Renskers on 13-11-13.
@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MCDebugBar : NSObject
+@interface KRDebugBar : NSObject
 
-+ (MCDebugBar *)sharedInstance;
++ (KRDebugBar *)sharedInstance;
 
 - (void)setup;
 - (void)addButtonWithTitle:(NSString *)title action:(void (^)(void))actionBlock;

@@ -9,25 +9,25 @@ Example:
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 #if DEBUG
-    [[MCDebugBar sharedInstance] setup];
+    [[KRDebugBar sharedInstance] setup];
 
-    [[MCDebugBar sharedInstance] addButtonWithTitle:@"Action 1" action:^{
+    [[KRDebugBar sharedInstance] addButtonWithTitle:@"Action 1" action:^{
         NSLog(@"Pressed action 1");
     }];
 
-    [[MCDebugBar sharedInstance] addButtonWithTitle:@"Action 2" action:^{
+    [[KRDebugBar sharedInstance] addButtonWithTitle:@"Action 2" action:^{
         NSLog(@"Pressed action 2");
     }];
 
-    [[MCDebugBar sharedInstance] addButtonWithTitle:@"Action 3" action:^{
+    [[KRDebugBar sharedInstance] addButtonWithTitle:@"Action 3" action:^{
         NSLog(@"Pressed action 3");
     }];
 
-    [[MCDebugBar sharedInstance] addButtonWithTitle:@"Action 4" action:^{
+    [[KRDebugBar sharedInstance] addButtonWithTitle:@"Action 4" action:^{
         NSLog(@"Pressed action 4");
     }];
 
-    [[MCDebugBar sharedInstance] addButtonWithTitle:@"Action 5" action:^{
+    [[KRDebugBar sharedInstance] addButtonWithTitle:@"Action 5" action:^{
         NSLog(@"Pressed action 5");
     }];
 #endif

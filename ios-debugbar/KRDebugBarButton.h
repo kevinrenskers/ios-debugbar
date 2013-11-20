@@ -1,5 +1,5 @@
 //
-//  MCDebugBarButton.h
+//  KRDebugBarButton.h
 //  Example
 //
 //  Created by Kevin Renskers on 20-11-13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MCDebugBarButton : UIBarButtonItem
+@interface KRDebugBarButton : UIBarButtonItem
 
 - (instancetype)initWithTitle:(NSString *)title action:(void (^)(void))actionBlock;
 

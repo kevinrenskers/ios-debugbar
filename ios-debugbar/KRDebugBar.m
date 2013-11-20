@@ -1,27 +1,27 @@
 //
-//  MCDebugBar.m
+//  KRDebugBar.m
 //  Example
 //
 //  Created by Kevin Renskers on 13-11-13.
 //  Copyright (c) 2013 mixedCase. All rights reserved.
 //
 
-#import "MCDebugBar.h"
-#import "MCDebugBarButton.h"
+#import "KRDebugBar.h"
+#import "KRDebugBarButton.h"
 
 
-@interface MCDebugBar ()
+@interface KRDebugBar ()
 @property (strong, nonatomic) UIScrollView *containerView;
 @property (strong, nonatomic) UIToolbar *toolBar;
 @property (strong, nonatomic) NSMutableArray *toolbarItems;
 @end
 
 
-@implementation MCDebugBar
+@implementation KRDebugBar
 
-+ (MCDebugBar *)sharedInstance {
++ (KRDebugBar *)sharedInstance {
     static dispatch_once_t pred;
-    static MCDebugBar *sharedInstance = nil;
+    static KRDebugBar *sharedInstance = nil;
     dispatch_once(&pred, ^{ sharedInstance = [[self alloc] init]; });
     return sharedInstance;
 }
@@ -103,7 +103,7 @@
 #pragma mark - Actions
 
 - (void)addButtonWithTitle:(NSString *)title action:(void (^)(void))actionBlock {
-    MCDebugBarButton *item = [[MCDebugBarButton alloc] initWithTitle:title action:actionBlock];
+    KRDebugBarButton *item = [[KRDebugBarButton alloc] initWithTitle:title action:actionBlock];
     [self.toolbarItems addObject:item];
 
     self.toolBar.items = self.toolbarItems;
