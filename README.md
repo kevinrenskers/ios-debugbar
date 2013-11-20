@@ -2,8 +2,7 @@
 
 Simply swipe down with 2 fingers to show a debug bar with customizable buttons.
 
-![Before](https://raw.github.com/kevinrenskers/ios-debugbar/master/screenshot1.png)
-![After](https://raw.github.com/kevinrenskers/ios-debugbar/master/screenshot2.png)
+![Screenshots](https://raw.github.com/kevinrenskers/ios-debugbar/master/screenshot.png)
 
 Example:
 
