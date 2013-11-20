@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="tR5-EF-RHr">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Welcome-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ton-zc-lDG"/>
+                        <viewControllerLayoutGuide type="bottom" id="moc-ZK-K1Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="Z5G-bi-sHg">
+                                <rect key="frame" x="20" y="72" width="280" height="366"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris malesuada ligula enim, ut mollis est dapibus sed. Pellentesque et facilisis risus. Phasellus ut risus leo. Aliquam erat volutpat. Maecenas euismod lacus rutrum leo viverra lobortis. Integer et molestie sapien, ac facilisis orci. Cras auctor molestie diam in scelerisque. Nulla aliquet gravida auctor. Proin lobortis mi quis ante sagittis venenatis. Nam sed ultrices diam, eget porta arcu. Proin venenatis nec felis vitae vulputate. Pellentesque ac tristique magna, sed scelerisque felis. Ut lacus sapien, laoreet eget magna eget, sagittis blandit diam.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INr-V1-3az">
+                                <rect key="frame" x="177" y="518" width="123" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show me a kitten!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oYC-U6-60w" kind="push" id="Trs-u1-HZn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="moc-ZK-K1Z" firstAttribute="top" secondItem="INr-V1-3az" secondAttribute="bottom" constant="20" id="1Sb-qQ-3MB"/>
+                            <constraint firstItem="Z5G-bi-sHg" firstAttribute="top" secondItem="ton-zc-lDG" secondAttribute="bottom" constant="20" symbolic="YES" id="5SZ-nl-uH4"/>
+                            <constraint firstItem="Z5G-bi-sHg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="ABQ-lZ-PoT"/>
+                            <constraint firstAttribute="trailing" secondItem="Z5G-bi-sHg" secondAttribute="trailing" constant="20" symbolic="YES" id="x6E-e7-rlG"/>
+                            <constraint firstAttribute="trailing" secondItem="INr-V1-3az" secondAttribute="trailing" constant="20" id="yDO-iE-WnH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome" id="4Dn-iD-sDV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="595" y="-189"/>
+        </scene>
+        <!--View Controller - Aww-->
+        <scene sceneID="7pC-MA-s2b">
+            <objects>
+                <viewController id="oYC-U6-60w" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pM2-1V-RzA"/>
+                        <viewControllerLayoutGuide type="bottom" id="jWK-Pu-4iW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vns-tP-mkT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placholder.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="GFq-et-nmb">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GFq-et-nmb" firstAttribute="leading" secondItem="vns-tP-mkT" secondAttribute="leading" id="J2d-Zm-uSj"/>
+                            <constraint firstAttribute="trailing" secondItem="GFq-et-nmb" secondAttribute="trailing" id="QMT-tS-CPj"/>
+                            <constraint firstItem="jWK-Pu-4iW" firstAttribute="top" secondItem="GFq-et-nmb" secondAttribute="bottom" id="UJH-1N-iAg"/>
+                            <constraint firstItem="GFq-et-nmb" firstAttribute="top" secondItem="vns-tP-mkT" secondAttribute="top" id="brz-wR-8zx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Aww" id="kRE-cA-M8p"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j3U-dS-yFZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="989" y="-189"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fgd-HL-8gH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tR5-EF-RHr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="pCT-J0-uS4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="0iR-zP-HNc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UT9-q9-sd0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="-189"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="placholder.jpeg" width="320" height="568"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
