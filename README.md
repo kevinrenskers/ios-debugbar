@@ -1,10 +1,10 @@
 # ios-debugbar
 
-Simply swipe down with 2 fingers to show a debug bar with customizable buttons.
+Simply swipe down with 2 fingers to show a debug bar with customizable buttons. I use it for example to create or delete test data, force a reload, clean the cache, etc.
 
 ![Screenshots](https://raw.github.com/kevinrenskers/ios-debugbar/master/screenshot.png)
 
-Example:
+## Example
 
 ```objective-c
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
