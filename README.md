@@ -59,10 +59,9 @@ The default activation method is a two finger swipe down, but this is easily cha
         [[KRDebugBar sharedInstance] toggle];
     }
 }
-
 ```
 
-You could also very easily add shake detection:
+You could also very easily add shake detection by adding this to your AppDelegate:
 
 ```objective-c
 - (BOOL)canBecomeFirstResponder {
