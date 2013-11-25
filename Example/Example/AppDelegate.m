@@ -9,11 +9,19 @@
 #import "AppDelegate.h"
 #import "KRDebugBar.h"
 
+@interface AppDelegate () <KRDebugBarDelegate>
+@end
+
+
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 #if DEBUG
     [[KRDebugBar sharedInstance] setup];
+
+    // Use this (instead of `setup` above) to have a custom gesture
+    // recognizer rather then the default two finger swipes
+    //[[KRDebugBar sharedInstance] setupWithDelegate:self];
 
     [[KRDebugBar sharedInstance] addButtonWithTitle:@"Action 1" action:^{
         NSLog(@"Pressed action 1");
@@ -38,5 +46,22 @@
 
     return YES;
 }
-							
+
+/*
+ * Enable to get custom activationg gesture.
+ * Also uncomment the [[KRDebugBar sharedInstance] setupWithDelegate:self]; line above.
+ *
+- (void)debugBar:(KRDebugBar *)debugBar addActivationMethodToWindow:(UIWindow *)window {
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressed:)];
+    longPress.numberOfTouchesRequired = 3;
+    [window addGestureRecognizer:longPress];
+}
+
+- (void)longPressed:(UIGestureRecognizer *)sender {
+    if (sender.state == UIGestureRecognizerStateBegan) {
+        [[KRDebugBar sharedInstance] toggle];
+    }
+}
+ */
+
 @end

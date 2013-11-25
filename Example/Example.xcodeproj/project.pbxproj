@@ -23,6 +23,7 @@
 		0A0505E71833C57C000DC4B7 /* KRDebugBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0505E61833C57C000DC4B7 /* KRDebugBar.m */; };
 		0A0505E91833CBCC000DC4B7 /* placholder.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0A0505E81833CBCC000DC4B7 /* placholder.jpeg */; };
 		0AC82FEC183D107900770D85 /* KRDebugBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC82FEB183D107900770D85 /* KRDebugBarButton.m */; };
+		0AC82FFA1843B92600770D85 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0AC82FF91843B92600770D85 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		0A0505E81833CBCC000DC4B7 /* placholder.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placholder.jpeg; sourceTree = "<group>"; };
 		0AC82FEA183D107900770D85 /* KRDebugBarButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRDebugBarButton.h; sourceTree = "<group>"; };
 		0AC82FEB183D107900770D85 /* KRDebugBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRDebugBarButton.m; sourceTree = "<group>"; };
+		0AC82FF91843B92600770D85 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				0A0505D41833C2E0000DC4B7 /* ExampleTests */,
 				0A0505AE1833C2E0000DC4B7 /* Frameworks */,
 				0A0505AD1833C2E0000DC4B7 /* Products */,
+				0AC82FF91843B92600770D85 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -247,6 +250,7 @@
 			files = (
 				0A0505C81833C2E0000DC4B7 /* Images.xcassets in Resources */,
 				0A0505E91833CBCC000DC4B7 /* placholder.jpeg in Resources */,
+				0AC82FFA1843B92600770D85 /* README.md in Resources */,
 				0A0505BA1833C2E0000DC4B7 /* InfoPlist.strings in Resources */,
 				0A0505C31833C2E0000DC4B7 /* Main.storyboard in Resources */,
 			);

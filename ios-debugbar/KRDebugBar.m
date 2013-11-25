@@ -14,6 +14,7 @@
 @property (strong, nonatomic) UIScrollView *containerView;
 @property (strong, nonatomic) UIToolbar *toolBar;
 @property (strong, nonatomic) NSMutableArray *toolbarItems;
+@property (weak, nonatomic) id<KRDebugBarDelegate> delegate;
 @end
 
 
@@ -29,6 +30,12 @@
 #pragma mark - Setup, showing and hiding
 
 - (void)setup {
+    [self setupWithDelegate:nil];
+}
+
+- (void)setupWithDelegate:(id<KRDebugBarDelegate>)delegate {
+    self.delegate = delegate;
+
     UIWindow *window = [[[UIApplication sharedApplication] delegate] window];
     [window makeKeyAndVisible];
 
@@ -45,15 +52,20 @@
 
     [window addSubview:self.containerView];
 
-    UISwipeGestureRecognizer *swipeDownRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDown:)];
-    swipeDownRecognizer.direction = UISwipeGestureRecognizerDirectionDown;
-    swipeDownRecognizer.numberOfTouchesRequired = 2;
-    [window addGestureRecognizer:swipeDownRecognizer];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(debugBar:addActivationMethodToWindow:)]) {
+        [self.delegate debugBar:self addActivationMethodToWindow:window];
+    } else {
+        // Default activation method is a two-finger swipe down, and up to dismiss.
+        UISwipeGestureRecognizer *swipeDownRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeDown:)];
+        swipeDownRecognizer.direction = UISwipeGestureRecognizerDirectionDown;
+        swipeDownRecognizer.numberOfTouchesRequired = 2;
+        [window addGestureRecognizer:swipeDownRecognizer];
 
-    UISwipeGestureRecognizer *swipeUpRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeUp:)];
-    swipeUpRecognizer.direction = UISwipeGestureRecognizerDirectionUp;
-    swipeUpRecognizer.numberOfTouchesRequired = 2;
-    [window addGestureRecognizer:swipeUpRecognizer];
+        UISwipeGestureRecognizer *swipeUpRecognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeUp:)];
+        swipeUpRecognizer.direction = UISwipeGestureRecognizerDirectionUp;
+        swipeUpRecognizer.numberOfTouchesRequired = 2;
+        [window addGestureRecognizer:swipeUpRecognizer];
+    }
 }
 
 - (void)swipeDown:(UILongPressGestureRecognizer *)sender {

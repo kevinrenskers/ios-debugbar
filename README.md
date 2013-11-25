@@ -35,3 +35,43 @@ Simply swipe down with 2 fingers to show a debug bar with customizable buttons. 
     return YES;
 }
 ```
+
+## Custom activation methods
+
+The default activation method is a two finger swipe down, but this is easily changed:
+
+```objective-c
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    // ...
+    [[KRDebugBar sharedInstance] setupWithDelegate:self];
+    // ...
+    return YES;
+}
+
+- (void)debugBar:(KRDebugBar *)debugBar addActivationMethodToWindow:(UIWindow *)window {
+    UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPressed:)];
+    longPress.numberOfTouchesRequired = 3;
+    [window addGestureRecognizer:longPress];
+}
+
+- (void)longPressed:(UIGestureRecognizer *)sender {
+    if (sender.state == UIGestureRecognizerStateBegan) {
+        [[KRDebugBar sharedInstance] toggle];
+    }
+}
+
+```
+
+You could also very easily add shake detection:
+
+```objective-c
+- (BOOL)canBecomeFirstResponder {
+    return YES;
+}
+
+- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (event.subtype==UIEventSubtypeMotionShake) {
+        [[KRDebugBar sharedInstance] toggle];
+    }
+}
+```
