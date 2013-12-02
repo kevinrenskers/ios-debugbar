@@ -4,6 +4,7 @@ Simply swipe down with 2 fingers to show a debug bar with customizable buttons. 
 
 ![Screenshots](https://raw.github.com/kevinrenskers/ios-debugbar/master/screenshot.png)
 
+
 ## Example
 
 ```objective-c
@@ -35,6 +36,7 @@ Simply swipe down with 2 fingers to show a debug bar with customizable buttons. 
     return YES;
 }
 ```
+
 
 ## Custom activation methods
 
@@ -74,3 +76,10 @@ You could also very easily add shake detection by adding this to your AppDelegat
     }
 }
 ```
+
+
+## Notes and to-do's
+Please note that there are some issues with this project that still need to be solved:
+
+- The debug bar doesn't handle rotations. Same goes for the direction of the two-finger swipe gesture.
+- The two-finger swipe down gesture doesn't play nice with tables, scroll views, collection views, etc. It's probably best to enable shake detection instead of relying on the default gesture.
