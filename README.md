@@ -1,4 +1,5 @@
 # ios-debugbar
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 Simply swipe down with 2 fingers to show a debug bar with customizable buttons. I use it for example to create or delete test data, force a reload, clean the cache, etc.
 
